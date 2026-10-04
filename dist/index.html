@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio personal de Alexi: proyectos, enfoque y contacto." />
+    <meta name="theme-color" content="#f4f2ed" />
+    <title>Alexi — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script>document.documentElement.dataset.theme = localStorage.getItem('portfolio-theme') || 'light';</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="Ir al inicio"><span>A</span><span class="brand-dot">.</span></a>
+      <nav class="nav" aria-label="Navegación principal" data-nav>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#enfoque">Enfoque</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" type="button" data-theme-toggle aria-label="Cambiar tema"><span aria-hidden="true">◐</span></button>
+        <button class="menu-button" type="button" data-menu-toggle aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="hero" id="inicio">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span> Disponible para construir algo útil</p>
+          <h1>Ideas claras.<br /><em>Productos</em> que funcionan.</h1>
+          <p class="hero-intro">Soy Alexi. Exploro desarrollo de software, diseño de interfaces y automatización para convertir problemas reales en experiencias simples.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#proyectos">Ver proyectos <span aria-hidden="true">↘</span></a>
+            <a class="button button-quiet" href="https://github.com/Alexiss2005" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <aside class="hero-card reveal" aria-label="Resumen profesional">
+          <div class="orb" aria-hidden="true"><span></span></div>
+          <div class="hero-card-content">
+            <p>Actualmente</p>
+            <strong>Diseñando mi sistema personal de trabajo con IA.</strong>
+            <div class="card-meta"><span>Perú</span><span>2026</span></div>
+          </div>
+        </aside>
+      </section>
+
+      <div class="ticker" aria-label="Áreas de interés">
+        <div class="ticker-track">
+          <span>Desarrollo web</span><i>✦</i><span>Experiencia de usuario</span><i>✦</i><span>Automatización</span><i>✦</i><span>Sistemas con IA</span><i>✦</i>
+          <span aria-hidden="true">Desarrollo web</span><i aria-hidden="true">✦</i><span aria-hidden="true">Experiencia de usuario</span><i aria-hidden="true">✦</i><span aria-hidden="true">Automatización</span><i aria-hidden="true">✦</i><span aria-hidden="true">Sistemas con IA</span><i aria-hidden="true">✦</i>
+        </div>
+      </div>
+
+      <section class="section projects" id="proyectos">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 / Trabajo seleccionado</p>
+          <h2>Construyo para<br /><em>aprender haciendo.</em></h2>
+        </div>
+        <div class="project-list">
+          <article class="project-row reveal">
+            <span class="project-index">01</span>
+            <div><h3>Jarvis</h3><p>Un sistema personal para identidad, memoria, skills e integraciones seguras con herramientas de IA.</p></div>
+            <div class="project-side"><ul aria-label="Tecnologías"><li>Codex</li><li>MCP</li><li>Node.js</li></ul><span class="project-arrow" aria-hidden="true">↗</span></div>
+          </article>
+          <article class="project-row reveal">
+            <span class="project-index">02</span>
+            <div><h3>New Portfolio</h3><p>Este sitio: una identidad digital responsive, accesible y construida como un sistema visual reutilizable.</p></div>
+            <div class="project-side"><ul aria-label="Tecnologías"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul><a class="project-arrow" href="#inicio" aria-label="Volver al inicio">↖</a></div>
+          </article>
+          <article class="project-row project-row-muted reveal">
+            <span class="project-index">03</span>
+            <div><h3>Próximo proyecto</h3><p>Un espacio reservado para el siguiente problema real que valga la pena resolver.</p></div>
+            <div class="project-side"><ul aria-label="Estado"><li>En exploración</li></ul><span class="project-arrow" aria-hidden="true">→</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section approach" id="enfoque">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 / Cómo trabajo</p>
+          <h2>Menos ruido.<br /><em>Más intención.</em></h2>
+        </div>
+        <div class="principles">
+          <article class="principle reveal"><span>01</span><h3>Entender</h3><p>Antes de escribir código, convierto la petición en un objetivo observable y elimino supuestos innecesarios.</p></article>
+          <article class="principle reveal"><span>02</span><h3>Construir</h3><p>Creo una primera versión completa y pequeña, con decisiones visuales coherentes y tecnología apropiada.</p></article>
+          <article class="principle reveal"><span>03</span><h3>Verificar</h3><p>Pruebo el flujo real, documento límites y dejo claro qué funciona, qué cambió y qué sigue.</p></article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contacto">
+        <div class="contact-panel reveal">
+          <p class="eyebrow">03 / Contacto</p>
+          <h2>¿Tienes una idea?<br /><em>Hagámosla concreta.</em></h2>
+          <div class="contact-footer">
+            <p>La mejor forma de empezar es compartir el problema, el contexto y el resultado que esperas.</p>
+            <a class="button button-inverse" href="https://github.com/Alexiss2005" target="_blank" rel="noreferrer">Conectar en GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span data-year></span> Alexi</p>
+      <p>Diseñado y construido con intención.</p>
+      <a href="#inicio">Volver arriba ↑</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
